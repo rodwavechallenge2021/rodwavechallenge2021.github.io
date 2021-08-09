@@ -1,0 +1,366 @@
+body {
+	background-image: url("../assets/background.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+
+	font-family: Times New Roman, serif;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 21px;
+	font-weight: 300;
+}
+
+/* background fix for mobile */
+body:after{
+	content:"";
+	position:fixed; /* stretch a fixed position to the whole screen */
+	top:0;
+	height:100vh; /* fix for mobile browser address bar appearing disappearing */
+	left:0;
+	right:0;
+	z-index:-1; /* needed to keep in the background */
+	background: url("../assets/background.jpg") center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.content {
+	font-size: 19px;
+	margin: 30px;
+	width: 82vw;
+	max-width: 780px;
+	margin: auto;
+}
+
+#openingparagraph {
+	font-size: 22px;
+	line-height: 2;
+	margin-bottom: 40px;
+	margin-top: 15px;
+}
+
+.testimonials {
+	width: auto;
+	margin: auto;
+}
+
+.entry_submission {
+	background-color: #000000;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 26px;
+	padding-top: 60px;
+	/* border-radius: 10px; */
+}
+
+p {
+	margin: 0px 0px 25px;
+}
+
+label {
+	font-weight: 400;
+}
+
+input, select, button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #000000;
+	border: 3px solid #d0c8aa;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 11px #d0c8aa;
+}
+
+input, select {
+	padding-left: 25px;
+	padding-right: 35px;
+}
+
+input[type=submit] {
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: #FFFFFF;
+}
+
+select {
+	/* -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none; */
+	background: url("../assets/arrow.png") no-repeat;
+	background-position: right center;
+	background-size: 18px;
+	background-color: #FFFFFF;
+}
+
+/* FOR DISABLED/GREY STYLE ON BIRTHDATE SELECTOR TEXT */
+
+select:required:invalid {
+  color: gray;
+}
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: black;
+}
+
+/* END DISABLED/GREY STYLE */
+
+#testimonialembed {
+	margin: auto;
+	padding-top: 30px;
+}
+
+.header {
+	margin: auto;
+	padding-top: 25px;
+	width: 44vw;
+	min-width: 400px;
+}
+
+.container {
+	margin: auto;
+}
+
+.row {
+	margin: auto;
+	display: flex;
+	text-align: center;
+  	justify-content: center;
+	margin-top: 25px;
+	margin-bottom: 20px;
+
+}
+
+
+
+a.disabled {
+	pointer-events: none;
+	cursor: default;
+	opacity: 0.5;
+}
+
+a, a:hover, a:visited, a:active {
+ 	color: inherit;
+ 	text-decoration: none;
+ }
+
+.streamingimg {
+	width: 8vw;
+	min-width: 120px;
+	margin-top: 18px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.footerlogoimg {
+	padding-top: 25px;
+	width: 11vw;
+	min-width: 140px;
+	margin-bottom: 25px;
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+.sticky_sc_footer {
+     position: sticky;
+     bottom: 0;
+	 background-color: #FFFFFF;
+}
+
+/* #sc_footer_embed {
+	transform: scale(0.8);
+} */
+
+/* SPLASH */
+.splash {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+
+	background-image: url("../assets/background.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	z-index: 10;
+
+	cursor: pointer;
+}
+
+/* background fix for mobile */
+.splash:after{
+	content:"";
+	position:fixed; /* stretch a fixed position to the whole screen */
+	top:0;
+	height:100vh; /* fix for mobile browser address bar appearing disappearing */
+	left:0;
+	right:0;
+	z-index:-1; /* needed to keep in the background */
+	background: url("../assets/background.jpg") center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.splashcontent {
+	width: 45vw;
+	max-width: 800px;
+	min-width: 380px;
+	margin: 0;
+    position: absolute;
+    top: 50%;
+	left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+/* END SPLASH */
+
+.fullwidth {
+	width: 99%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.footer {
+	padding-top: 50px;
+}
+
+/* form error styling */
+label.error {
+	color: #FF0000;
+	display: block;
+	margin-top: -10px;
+}
+
+/* hover effects only on web - so no sticky hover on mobile */
+@media (hover: hover) {
+	.footerlogoimghover:hover, .streamingimg:hover, .rodbuttonimg:hover {
+		opacity: 0.7;
+		transition: opacity 0.3s;
+		-webkit-transition: opacity 0.3s;
+	}
+}
+
+.footerlogoimghover:active, .streamingimg:active, .rodbuttonimg:active {
+	opacity: 0.5;
+	transition: opacity 0.3s;
+	-webkit-transition: opacity 0.3s;
+}
+
+@media (max-width: 768px) {
+	.footer {
+		padding-top: 30px;
+	}
+	.alignleft {
+		float: none;
+
+		/* seperate sizes for tacklebox logo on mobile */
+		width: 38vw;
+	}
+	.alignright {
+		float: none;
+		clear: both;
+		display: block;
+		margin: auto;
+		text-align: center;
+		padding-top: 45px;
+		padding-bottom: 60px;
+
+		/* seperate sizes for tacklebox logo on mobile */
+		width: 42vw;
+	}
+
+	.footerlogoimg {
+		/* width: 38vw; */
+		min-width: 120px;
+		margin: auto;
+	}
+
+
+
+}
+/* MOBILE */
+
+@media only screen and (max-width: 768px) {
+	body {
+		background-size: cover;
+		background-position: background-position: left 43% top;
+		font-size: 19px;
+	}
+
+	body:after{
+		background-position: left 43% top;
+	}
+
+	.splash:after{
+		background-position: left 43% top;
+	}
+
+	.content {
+		font-size: 17px;
+		width: 90vw;
+	}
+
+	#openingparagraph {
+		font-size: 20px;
+		line-height: 1.8;
+		margin-bottom: 25px;
+	}
+
+	.header {
+		padding-top: 27px;
+		width: 80vw;
+		min-width: 0;
+	}
+
+	input, select, button {
+		font-size: 16px;
+	}
+
+	.row {
+		display: initial;
+	}
+
+	#testimonialembed {
+		width: 70vw;
+		height: 500px;
+	}
+
+	#fname, #lname, #city, #state, #zipcode {
+		width: 85%;
+	}
+
+	.splashcontent {
+		min-width: 350px;
+	}
+
+	.entry_submission {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+}
