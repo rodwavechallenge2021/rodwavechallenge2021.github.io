@@ -1,4 +1,5 @@
 body {
+	background-color: #000000;
 	background-image: url("../assets/background.jpg");
 	background-size: cover;
 	background-attachment: fixed;
@@ -28,6 +29,10 @@ body:after{
 	background-size: cover;
 }
 
+.mainpage {
+	display: none;
+}
+
 .content {
 	font-size: 19px;
 	margin: 30px;
@@ -40,7 +45,7 @@ body:after{
 	font-size: 22px;
 	line-height: 2;
 	margin-bottom: 40px;
-	margin-top: 15px;
+	margin-top: 0px;
 }
 
 .testimonials {
@@ -126,9 +131,9 @@ option {
 
 .header {
 	margin: auto;
-	padding-top: 25px;
-	width: 44vw;
-	min-width: 400px;
+	padding-top: 50px;
+	width: 40vw;
+	min-width: 350px;
 }
 
 .container {
@@ -225,7 +230,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .splashcontent {
-	width: 45vw;
+	width: 41vw;
 	max-width: 800px;
 	min-width: 380px;
 	margin: 0;
@@ -333,8 +338,8 @@ label.error {
 	}
 
 	.header {
-		padding-top: 27px;
-		width: 80vw;
+		padding-top: 40px;
+		width: 74vw;
 		min-width: 0;
 	}
 
@@ -356,7 +361,7 @@ label.error {
 	}
 
 	.splashcontent {
-		min-width: 350px;
+		min-width: 320px;
 	}
 
 	.entry_submission {

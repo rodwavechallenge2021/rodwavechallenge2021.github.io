@@ -28,6 +28,8 @@ function populateYears() {
 var widget1 = SC.Widget("sc_footer_embed");
 window.onload = function() {
 	widget1.pause();
+	// set main page to visible
+	$(".mainpage").css("display","initial");
 }
 
 // DISABLE THE SPLASH PAGE ON CLICK
@@ -39,6 +41,9 @@ $( ".splash" ).click(function() {
 
 	// enable soundcloud widget
 	widget1.play();
+
+	// set main page to visible just to be sure
+	$(".mainpage").css("display","initial");
 });
 
 populateDays();
@@ -47,8 +52,16 @@ populateYears();
 // form validation
 $("#entryform").validate({
 	messages: {
-		"entry.1619314826": "Enter a valid Soundcloud link.",
-		"entry.1451817724": "Enter a valid email address.",
-		"entry.119122662": "Enter a valid phone number.",
-	}
+		"entry.1619314826": "*Enter a valid Soundcloud link",
+		"entry.1451817724": "*Enter a valid email address",
+		"entry.119122662": "*Enter a valid phone number",
+	},
+	rules: {
+		"entry.119122662": {
+			phoneUS: true,
+		},
+		"entry.1619314826": {
+			validSoundcloudUrl: true,
+		},
+	},
 });
