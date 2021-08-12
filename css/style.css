@@ -173,18 +173,21 @@ a, a:hover, a:visited, a:active {
 
 .footerlogoimg {
 	padding-top: 25px;
-	width: 11vw;
-	min-width: 140px;
-	margin-bottom: 25px;
 	margin-left: 32px;
 	margin-right: 32px;
+	margin-bottom: 25px;
 }
 
 .alignleft {
 	float: left;
+	width: 11vw;
+	min-width: 140px;
+	padding-top: 45px;
 }
 .alignright {
 	float: right;
+	width: 14vw;
+	min-width: 168px;
 }
 
 .sticky_sc_footer {
@@ -286,6 +289,7 @@ label.error {
 
 		/* seperate sizes for tacklebox logo on mobile */
 		width: 38vw;
+		padding-top: 25px;
 	}
 	.alignright {
 		float: none;
